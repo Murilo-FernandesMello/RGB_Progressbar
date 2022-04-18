@@ -1,23 +1,23 @@
-body{
+body {
     color: green;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-#text{
-    padding: 20px ;
+#text {
+    padding: 20px;
     text-align: justify;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0%;
 }
 
-#scrollPath{
+#scrollPath {
     position: fixed;
     top: 0;
     right: 0;
@@ -26,7 +26,7 @@ h1{
     background: rgba(255, 255, 255, 0.05)
 }
 
-#progressbar{
+#progressbar {
     position: fixed;
     top: 0;
     right: 0;
@@ -35,16 +35,17 @@ h1{
     animation: animate 5s linear infinite;
 }
 
-@keyframes animate{
-    0%, 100%{
+@keyframes animate {
+    0%,
+    100% {
         filter: hue-rotate(0deg);
     }
-    50%{
+    50% {
         filter: hue-rotate(360deg);
     }
 }
 
-#progressbar:before{
+#progressbar:before {
     content: "";
     position: absolute;
     top: 0;
@@ -55,7 +56,7 @@ h1{
     filter: blur(10px);
 }
 
-#progressbar:after{
+#progressbar:after {
     content: "";
     position: absolute;
     top: 0;
